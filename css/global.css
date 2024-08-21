@@ -1,0 +1,89 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./button.css";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+image {
+  object-fit: cover;
+  display: flex;
+}
+body {
+  font-family: var(--main-font-family);
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+}
+.navigation {
+  padding-top: 64.84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.menu ul li a {
+  color: #333136;
+}
+main {
+  height: 100vh;
+}
+.footer-content {
+  border-radius: 15px;
+  background-color: var(--peach-color);
+  padding: 72px 95px 46px 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.txt1 {
+  max-width: 268px;
+  font-size: var(--h2-fs);
+  font-weight: 500;
+  line-height: 40px;
+  color: var(--white-color);
+}
+.footer-content-left-side .txt2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 26px;
+  color: var(--white-color);
+  max-width: 459px;
+}
+.footer-content-right-side button {
+  max-width: 152px;
+  padding: 17px 19px 17px 18px;
+  letter-spacing: 1px;
+  background-color: var(--white-color);
+  color: var(--dark-gr ay);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 21.68px;
+  border: none;
+  background: #ffffff;
+  border-radius: 8px;
+}
