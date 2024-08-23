@@ -30,16 +30,54 @@ body {
   font-size: 1.6rem;
   line-height: 1.625;
 }
-
 .container {
   max-width: 1111px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .navigation {
   padding-top: 64.84px;
+  padding-bottom: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.navigation .menu-burger {
+  display: none;
+}
+.navigation .menu {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 690px;
+    padding: 0 39px;
+  }
+}
+@media screen and (max-width: 666px) {
+  .navigation .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
+  .navigation .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 327px;
+  }
+  .navigation {
+    padding-top: 35px;
+  }
+  .navigation .menu {
+    display: none;
+  }
+  .navigation .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
 }
 .menu ul {
   display: flex;
@@ -47,20 +85,32 @@ body {
   gap: 42px;
 }
 .menu ul li a {
-  color: #333136;
+  font-size: 1.4rem;
+  line-height: 1.4px;
+  letter-spacing: 2px;
+  color: var(--dark-gray);
 }
 main {
   height: 100vh;
 }
+/* 
+footer {
+  background-color: var(--black-color);
+}
+footer .container {
+  position: relative;
+}
 .footer-content {
-  border-radius: 15px;
+  position: absolute;
+  top: -72px;
   background-color: var(--peach-color);
-  padding: 72px 95px 46px 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 72px 95px 46px 95px;
+  border-radius: 15px;
 }
-.txt1 {
+.footer-content-left-side .txt1 {
   max-width: 268px;
   font-size: var(--h2-fs);
   font-weight: 500;
@@ -74,12 +124,12 @@ main {
   color: var(--white-color);
   max-width: 459px;
 }
-.footer-content-right-side button {
+.get-in-touch {
+  padding: 17px;
   max-width: 152px;
-  padding: 17px 19px 17px 18px;
   letter-spacing: 1px;
   background-color: var(--white-color);
-  color: var(--dark-gr ay);
+  color: var(--dark-gray);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 21.68px;
@@ -87,3 +137,6 @@ main {
   background: #ffffff;
   border-radius: 8px;
 }
+.footer-part a {
+  padding-top: 144px;
+} */
