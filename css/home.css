@@ -18,11 +18,7 @@
   display: flex;
   justify-content: space-between;
 }
-.phone {
-  padding-left: 470px;
-  z-index: 2;
-  margin: 0 auto;
-}
+
 .hero-left-side {
   margin: 0 auto;
   position: absolute;
@@ -32,7 +28,7 @@
   max-width: 540px;
 }
 .hero-left-side h2 {
-  min-width: 540px;
+  max-width: 540px;
   z-index: 5;
   font-size: 4.8rem;
   line-height: 48px;
@@ -57,6 +53,32 @@
   font-size: 1.5rem;
   border-radius: 8px;
 }
+.phone {
+  padding-left: 470px;
+  z-index: 2;
+}
+.section1-card {
+  gap: 30px;
+  align-items: center;
+  padding-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.section1-inside-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.web-design-img {
+  border-radius: 15px;
+}
+.Grap-des-img {
+  border-radius: 15px;
+}
+.app-des-img {
+  border-radius: 15px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 690px;
@@ -72,7 +94,7 @@
     text-align: center;
   }
   .phone {
-    padding-top: 255px;
+    padding-top: 300px;
     padding-left: 0;
   }
   .hero-left-side {
@@ -90,8 +112,13 @@
   }
 }
 @media screen and (max-width: 666px) {
+  .navigation {
+    padding-top: 35px;
+  }
+  .phone {
+  }
   .hero-content {
-    border-radius: 0;
+    border-radius: 15px;
   }
   .navigation .menu-burger {
     display: block;
@@ -99,15 +126,34 @@
   }
   .container {
     max-width: 100%;
-    padding: 0;
+    padding: 0 39px;
   }
   .navigation .menu {
     display: none;
   }
 }
 @media screen and (max-width: 375px) {
+  .hero-left-side h2 {
+    font-size: 3.2rem;
+    line-height: 36px;
+  }
+  .hero {
+    background-color: var(--peach-color);
+  }
+  .hero-content {
+    max-height: 843px;
+  }
+  .btn-learn-more {
+    letter-spacing: 1px;
+  }
+  .hero-left-side p {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
   .container {
     max-width: 327px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .navigation {
     padding-top: 35px;
@@ -118,5 +164,7 @@
   .navigation .menu-burger {
     display: block;
     cursor: pointer;
+  }
+  .phone {
   }
 }
